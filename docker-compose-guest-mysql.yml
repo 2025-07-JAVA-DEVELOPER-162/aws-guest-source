@@ -1,4 +1,4 @@
-name: docker-compose-guest-mysql
+version: 3.3
 services:
   mysqlservice:
     image: mysql:8.0
@@ -31,7 +31,7 @@ services:
     environment:
       SPRING_PROFILES_ACTIVE: mysql-prod-group   # ★ 프로필 분리됨
     ports:
-      - 8080:8080
+      - 80:80
     restart: on-failure 
 volumes:
   mysql_volume:
