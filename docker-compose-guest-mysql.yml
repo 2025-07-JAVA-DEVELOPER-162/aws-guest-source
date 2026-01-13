@@ -30,7 +30,7 @@ services:
     environment:
       SPRING_PROFILES_ACTIVE: mysql-prod-group   # ★ 프로필 분리됨
     ports:
-      - 80:80
+      - 80:8080
     restart: on-failure 
 volumes:
   mysql_volume:
