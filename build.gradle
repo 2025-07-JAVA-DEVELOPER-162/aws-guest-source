@@ -53,5 +53,5 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 bootJar{
-	archiveFileName = 'guest_spring.jar'
+	archiveFileName = 'app.jar'
 }
