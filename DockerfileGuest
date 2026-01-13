@@ -21,7 +21,9 @@ WORKDIR /app
 COPY --from=build /app/build/libs/*.jar app.jar
 
 # 기본값(필요하면 런타임에 덮어씀)
-
+# 기본값(필요하면 런타임에 덮어씀)
+ENV SPRING_PROFILES_ACTIVE=mysql-dev-group
+EXPOSE 8080
 
 EXPOSE 8080
 
